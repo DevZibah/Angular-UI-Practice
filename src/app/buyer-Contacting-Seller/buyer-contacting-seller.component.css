@@ -1,0 +1,18 @@
+/* navbar styles */
+.image1icon {
+  width: 25px;
+  height: 25px;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  /* border: none; */
+}
+.hamicon {
+  color: rgba(255, 144, 0, 1);
+}
+/* styles for min-width:768px */
+@media (min-width: 768px) {
+}
