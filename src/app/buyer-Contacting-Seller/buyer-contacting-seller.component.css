@@ -41,7 +41,22 @@
 }
 .houseIcon {
   padding: 12px;
+  font-size: 10px;
+}
+.firstText {
+  font-size: 20px;
+  font-weight: 500;
+}
+.main-sec {
+  padding: 12px;
+}
+.userDeets {
   font-size: 12px;
+}
+.actve {
+  border: 1px solid #33d3863b;
+  background-color: #33d3863b;
+  color: #33D386;
 }
 /* styles for min-width:768px */
 @media (min-width: 768px) {
