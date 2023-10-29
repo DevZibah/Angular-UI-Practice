@@ -99,6 +99,9 @@
   height: 40%;
   margin-top: 2px;
 }
+.desc-text {
+  text-align: justify;
+}
 /* styles for min-width:768px */
 @media (min-width: 768px) {
 }
