@@ -75,6 +75,30 @@
 .starIcon {
   margin-top: -3px;
 }
+.art-one {
+  position: relative;
+}
+.div-arrws {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.arrLeft,
+.arrRight {
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tickImg {
+  width: 40%;
+  height: 40%;
+  margin-top: 2px;
+}
 /* styles for min-width:768px */
 @media (min-width: 768px) {
 }
