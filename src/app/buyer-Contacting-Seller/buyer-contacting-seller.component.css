@@ -50,13 +50,30 @@
 .main-sec {
   padding: 12px;
 }
+.userImg img {
+  width: 35px;
+  height: 35px;
+}
 .userDeets {
   font-size: 12px;
 }
 .actve {
   border: 1px solid #33d3863b;
   background-color: #33d3863b;
-  color: #33D386;
+  color: #33d386;
+  width: 36px;
+  height: 13px;
+  font-size: 9px;
+  margin-top: -1.7px;
+}
+.actve p {
+  margin-top: 1px;
+}
+.div-name {
+  line-height: 7px;
+}
+.starIcon {
+  margin-top: -3px;
 }
 /* styles for min-width:768px */
 @media (min-width: 768px) {
