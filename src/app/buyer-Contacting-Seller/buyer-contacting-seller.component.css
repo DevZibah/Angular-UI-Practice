@@ -41,7 +41,11 @@
 }
 .houseIcon {
   padding: 12px;
-  font-size: 10px;
+  font-size: 9px;
+  font-weight: 400;
+}
+.route {
+  margin-left: 5px;
 }
 .firstText {
   font-size: 20px;
@@ -122,6 +126,80 @@
 }
 /* styles for min-width:768px */
 @media (min-width: 768px) {
+  .houseIcon {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .houIcn {
+    margin-top: 3px;
+  }
+  .firstText {
+    font-size: 25px;
+    font-weight: 600;
+    width: 90%;
+  }
+  .thouText {
+    width: 100%;
+  }
+  .div-price {
+    height: 58px;
+  }
+  .userImg img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+  }
+  .div-name {
+    line-height: 8px;
+    font-size: 14px;
+  }
+  .actve {
+    width: 38px;
+    height: 14px;
+    margin-top: -1.6px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .main-sell {
+    width: 70%;
+  }
+  .starImg {
+    width: 12%;
+    height: 12%;
+  }
+  .starImg1 {
+    width: 11% !important;
+    height: 11% !important;
+  }
+  .starNum {
+    margin-top: 1px !important;
+  }
+  .starNum1 {
+    font-size: 12px;
+  }
+  .desc-text {
+    width: 80%;
+  }
+  .avail {
+    width: 25rem;
+  }
 }
+/* styles for min-width:1024px */
 @media (min-width: 1024px) {
+  nav {
+    border: 1px solid red;
+  }
+  .image1icon {
+    width: 50px;
+    height: 50px;
+  }
+  .iconText {
+    border: 1px solid red;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px !important;
+  }
 }
