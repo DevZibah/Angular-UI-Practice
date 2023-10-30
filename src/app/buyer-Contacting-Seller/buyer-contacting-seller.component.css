@@ -124,6 +124,13 @@
 .asterisk1 {
   font-size: 16px;
 }
+.tabs {
+  border-bottom: 1px solid #a59f9f;
+}
+.starNum1 {
+  transform: translateY(-20.8%);
+  font-size: 11px !important;
+}
 /* styles for min-width:768px */
 @media (min-width: 768px) {
   .houseIcon {
@@ -158,11 +165,6 @@
     height: 14px;
     margin-top: -1.6px;
   }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
   .main-sell {
     width: 70%;
   }
@@ -178,13 +180,20 @@
     margin-top: 1px !important;
   }
   .starNum1 {
-    font-size: 12px;
+    transform: translateY(-16%) !important;
+    font-size: 14px !important;
   }
-  .desc-text {
-    width: 80%;
+  .desc,
+  .desc-text,
+  .tabs {
+    width: 75%;
   }
-  .avail {
-    width: 25rem;
+}
+
+@media (min-width: 950px) {
+  .starNum1 {
+    transform: translateY(-13%) !important;
+    font-size: 18px !important;
   }
 }
 /* styles for min-width:1024px */
@@ -281,13 +290,13 @@
   }
   .date,
   .starNum,
-  .fixPr,
-  .starNum1 {
+  .fixPr {
     font-size: 14px !important;
     font-weight: 400 !important;
   }
   .starNum1 {
-    margin-top: -1px !important;
+    transform: translateY(-13%) !important;
+    font-size: 18px !important;
   }
   .fixPr {
     margin-top: 1.6px !important;
@@ -311,12 +320,6 @@
     width: 283px !important;
     height: 69px !important;
   }
-  .facilTools {
-    width: 35rem;
-  }
-  .avail p {
-    margin-left: -11rem !important;
-  }
   .asterisk1 {
     margin-top: 2.5px;
   }
@@ -329,4 +332,33 @@
   .contactButtn p {
     margin-top: 10px !important;
   }
+}
+@media (min-width: 1440px) {
+  nav {
+    border: 1px solid red;
+  }
+  .has-search {
+    width: 643px !important;
+    margin-left: 4rem;
+  }
+  .div-job {
+    margin-left: 3rem;
+  }
+  .bell,
+  .envelop {
+    margin-left: 3rem !important;
+  }
+  .navImg img {
+    margin-left: 3rem !important;
+  }
+  .starImg1 {
+    width: 75px !important;
+    height: 15px !important;
+  }
+  /* .sec-two {
+    width: 823px;
+  }
+  .div-gap {
+    border: 1px solid red;
+  } */
 }
