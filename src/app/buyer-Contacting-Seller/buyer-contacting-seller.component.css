@@ -127,12 +127,20 @@
 .tabs {
   border-bottom: 1px solid #a59f9f;
 }
+.grid-one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
 .starNum1 {
   transform: translateY(-20.8%);
   font-size: 11px !important;
 }
 /* styles for min-width:768px */
 @media (min-width: 768px) {
+  nav {
+    margin-top: -1.5rem !important;
+  }
   .houseIcon {
     font-size: 12px;
     font-weight: 500;
@@ -189,15 +197,16 @@
     width: 75%;
   }
 }
-
-@media (min-width: 950px) {
-  .starNum1 {
-    transform: translateY(-13%) !important;
-    font-size: 18px !important;
-  }
-}
 /* styles for min-width:1024px */
 @media (min-width: 1024px) {
+  nav {
+    margin-top: -2.5rem !important;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
   .image1icon {
     width: 50px;
     height: 50px;
@@ -208,17 +217,19 @@
     margin-top: 16px !important;
   }
   .has-search {
-    margin-top: 1.7rem;
-    width: 450px !important;
+    transform: translate(-5rem, 1.5rem);
+    width: 420px !important;
   }
   .div-job {
-    height: fit-content;
-    margin-top: 1.7rem;
+    width: 21%;
+    height: 20%;
+    transform: translate(-4rem, 1.5rem);
   }
-  .bell,
+  .bell {
+    transform: translate(-2.5rem, 2.2rem);
+  }
   .envelop {
-    margin-top: 2.3rem;
-    margin-left: 10px !important;
+    transform: translate(-1rem, 2.2rem);
   }
   .navImg img {
     margin-top: 1.4rem !important;
@@ -295,7 +306,7 @@
     font-weight: 400 !important;
   }
   .starNum1 {
-    transform: translateY(-13%) !important;
+    transform: translateY(1px) !important;
     font-size: 18px !important;
   }
   .fixPr {
@@ -334,19 +345,20 @@
   }
 }
 @media (min-width: 1440px) {
-  nav {
-    border: 1px solid red;
-  }
   .has-search {
-    width: 643px !important;
-    margin-left: 4rem;
+    transform: translate(-8rem, 1.5rem);
+    width: 700px !important;
   }
   .div-job {
-    margin-left: 3rem;
+    width: 21%;
+    height: 20%;
+    transform: translate(-5rem, 1.5rem);
   }
-  .bell,
+  .bell {
+    transform: translate(-4rem, 2rem);
+  }
   .envelop {
-    margin-left: 3rem !important;
+    transform: translate(0.5rem, 2rem);
   }
   .navImg img {
     margin-left: 3rem !important;
@@ -355,10 +367,9 @@
     width: 75px !important;
     height: 15px !important;
   }
-  /* .sec-two {
-    width: 823px;
-  }
-  .div-gap {
+  .starNum {
     border: 1px solid red;
-  } */
+    font-size: 18px !important;
+    margin-top: 2px !important;
+  }
 }
