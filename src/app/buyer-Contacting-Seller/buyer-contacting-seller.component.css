@@ -189,17 +189,144 @@
 }
 /* styles for min-width:1024px */
 @media (min-width: 1024px) {
-  nav {
-    border: 1px solid red;
-  }
   .image1icon {
     width: 50px;
     height: 50px;
   }
   .iconText {
-    border: 1px solid red;
     font-size: 20px;
     font-weight: 500;
+    margin-top: 16px !important;
+  }
+  .has-search {
+    margin-top: 1.7rem;
+    width: 450px !important;
+  }
+  .div-job {
+    height: fit-content;
+    margin-top: 1.7rem;
+  }
+  .bell,
+  .envelop {
+    margin-top: 2.3rem;
+    margin-left: 10px !important;
+  }
+  .navImg img {
+    margin-top: 1.4rem !important;
+    width: 50px;
+    height: 50px;
+  }
+  .houseIcon {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .route {
+    margin-left: 10px;
+  }
+  .firstText {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+  }
+  .userImg img {
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: 0.4rem !important;
+  }
+  .div-name p {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 19.16px;
+  }
+  .starIcon {
+    margin-top: 2px;
+  }
+  .actve {
+    width: 58px;
+    height: 24px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .div-price {
+    height: 78px;
+  }
+  .profile {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .art-profle {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+  }
+  .con-sell,
+  .book-ser {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    height: 59px !important;
+  }
+  .con-sell p,
+  .book-ser p {
+    margin-top: 12px !important;
+  }
+  .arrIconn {
+    margin-top: 21px !important;
+    height: fit-content;
+  }
+  .main-sell {
+    margin-top: 5rem !important;
+  }
+  .figmaText,
+  .skillText {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+  .date,
+  .starNum,
+  .fixPr,
+  .starNum1 {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
+  .starNum1 {
+    margin-top: -1px !important;
+  }
+  .fixPr {
+    margin-top: 1.6px !important;
+  }
+  .hundText,
+  .skillSet {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  .desc-text,
+  .SD {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+  .fiveStars {
+    margin-top: 2px;
+  }
+  .reviewsButtn {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    width: 283px !important;
+    height: 69px !important;
+  }
+  .facilTools {
+    width: 35rem;
+  }
+  .avail p {
+    margin-left: -11rem !important;
+  }
+  .asterisk1 {
+    margin-top: 2.5px;
+  }
+  .contactButtn {
+    width: 198px !important;
+    height: 59px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+  .contactButtn p {
     margin-top: 10px !important;
   }
 }
