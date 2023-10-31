@@ -4,9 +4,9 @@
       <div class="user-list-card">
         <div
           class="user-card"
-          [ngClass]="user?.phone === selectedUser?.phone && 'active'"
+          [ngClass]="{'active': user?.phone === selectedUser?.phone}"
           *ngFor="let user of userList"
-          (click)="selectUserHandler(user?.phone)"
+          (click)="selectUserHandler(user.phone)"
         >
           <img [src]="user?.image" [alt]="user?.name" class="avatar" />
           <p class="username">{{ user?.name }}</p>
@@ -28,7 +28,7 @@
           <div class="chat-body">
             <div
               *ngFor="let item of messageArray"
-              [ngClass]="item?.user === currentUser?.name && 'same-user'"
+             [ngClass]="{'same-user': item?.user === currentUser?.name}"
             >
               <p class="message-container">{{ item?.message }}</p>
             </div>

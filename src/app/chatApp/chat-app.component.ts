@@ -24,7 +24,7 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
   public userList = [
     {
       id: 1,
-      name: 'The Swag Coder',
+      name: 'Chisom',
       phone: '9876598765',
       image: 'assets/user/user-1.png',
       roomId: {
@@ -35,7 +35,7 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
     },
     {
       id: 2,
-      name: 'Wade Warren',
+      name: 'Jumoke',
       phone: '9876543210',
       image: 'assets/user/user-2.png',
       roomId: {
@@ -46,7 +46,7 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
     },
     {
       id: 3,
-      name: 'Albert Flores',
+      name: 'Luciana',
       phone: '9988776655',
       image: 'assets/user/user-3.png',
       roomId: {
@@ -57,7 +57,7 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
     },
     {
       id: 4,
-      name: 'Dianne Russell',
+      name: 'Ross',
       phone: '9876556789',
       image: 'assets/user/user-4.png',
       roomId: {
