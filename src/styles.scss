@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #E5E5E5;
+  background-color: #5B3240 !important;
+  // background-color: #E5E5E5 !important;
 }
 
 .container-fluid {
@@ -81,7 +82,7 @@ body {
   }
 
   .chat-body {
-    background-image: url(./assets/user/bg-image.jpg);
+    background-image: url(./assets/user/bgImg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

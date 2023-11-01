@@ -36,7 +36,7 @@ export class ChatService {
   }
 
   getStorage() {
-    // nb: i changed the type of storage from string to any
+    // note: i changed the type of storage from string to any
     const storage: any = localStorage.getItem('chats');
     return storage ? JSON.parse(storage) : [];
   }

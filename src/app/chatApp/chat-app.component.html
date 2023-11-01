@@ -1,18 +1,42 @@
 <div class="container-fluid" *ngIf="showScreen">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 border border-danger">
       <div class="user-list-card">
-        <div
-          class="user-card"
-          [ngClass]="{'active': user?.phone === selectedUser?.phone}"
-          *ngFor="let user of userList"
-          (click)="selectUserHandler(user.phone)"
-        >
-          <img [src]="user?.image" [alt]="user?.name" class="avatar" />
-          <p class="username">{{ user?.name }}</p>
-        </div>
+        <!--  this block shows the current user -->
+        <article class="mt-2">
+          <p class="text-dark fw-bold fs-5" style="padding: 10px">
+            Current User:
+          </p>
+          <div class="user-card">
+            <img
+              [src]="currentUser?.image"
+              [alt]="currentUser?.name"
+              class="avatar"
+            />
+            <p class="username">{{ currentUser?.name }}</p>
+          </div>
+        </article>
+        <hr />
+        <!-- this block shows the list of registered users -->
+        <article>
+          <p class="text-dark fw-bold fs-5" style="padding: 10px">
+            List of Registered Users:
+          </p>
+          <div
+            class="user-card"
+            [ngClass]="{ active: user?.phone === selectedUser?.phone }"
+            *ngFor="let user of userList"
+            (click)="selectUserHandler(user.phone)"
+          >
+            <img [src]="user?.image" [alt]="user?.name" class="avatar" />
+            <p class="username">{{ user?.name }}</p>
+          </div>
+        </article>
       </div>
     </div>
+
+    <!-- this block shows the chat room --> 
+    
     <div class="col-md-8">
       <div class="chat-container">
         <ng-container *ngIf="selectedUser">
@@ -28,7 +52,7 @@
           <div class="chat-body">
             <div
               *ngFor="let item of messageArray"
-             [ngClass]="{'same-user': item?.user === currentUser?.name}"
+              [ngClass]="{ 'same-user': item?.user === currentUser?.name }"
             >
               <p class="message-container">{{ item?.message }}</p>
             </div>

@@ -77,7 +77,6 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
     this.chatService
       .getMessage()
       .subscribe((data: { user: string; room: string; message: string }) => {
-        // this.messageArray.push(data);
         if (this.roomId) {
           setTimeout(() => {
             this.storageArray = this.chatService.getStorage();
