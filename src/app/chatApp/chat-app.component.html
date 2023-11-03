@@ -39,7 +39,9 @@
     
     <div class="col-md-8">
       <div class="chat-container">
+        <!-- if selected user exists show this block -->
         <ng-container *ngIf="selectedUser">
+          <!-- this header contains the image and name of the selectedUser -->
           <div class="chat-header">
             <img
               [src]="selectedUser?.image"
@@ -49,6 +51,7 @@
             <p class="username">{{ selectedUser?.name }}</p>
           </div>
 
+          <!-- this shows the current and selected users messages -->
           <div class="chat-body">
             <div
               *ngFor="let item of messageArray"
@@ -58,6 +61,7 @@
             </div>
           </div>
 
+          <!-- this block contains the input element for entering messages -->
           <div class="chat-footer">
             <div class="row">
               <div class="col-md-10">
@@ -88,6 +92,7 @@
   </div>
 </div>
 
+<!-- this section is seen immediately the app is initialized(login interface) -->
 <ng-template #popup let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title">Login</h4>
