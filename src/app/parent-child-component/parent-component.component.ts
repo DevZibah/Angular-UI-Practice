@@ -10,6 +10,8 @@ import { service } from './service';
 export class ParentComponentComponent implements OnInit {
   errorMessage = '';
   users: UserDetails[] = [];
+  indUser: any;
+  // indUser: UserDetails | undefined;
   constructor(private service: service) {}
 
   ngOnInit(): void {
@@ -28,16 +30,14 @@ export class ParentComponentComponent implements OnInit {
     });
   }
 
-  // viewDataById(viewTemplate: TemplateRef<any>, formUserId: number) {
-  //   if (formUserId) {
-  //     this.modalRef = this.modalService.show(viewTemplate);
-  //     this.formUser = this.formUsers.find((x) => x.id === formUserId);
-  //     console.log(this.formUser);
+  viewDataById(userId: number) {
+    if (userId) {
+      this.indUser = this.users.find((x) => x.id === userId);
 
-  //     this.service.getDataById(formUserId).subscribe((response) => {
-  //       this.formUser = response;
-  //       console.log(this.formUser);
-  //     });
-  //   }
-  // }
+      this.service.getDataById(userId).subscribe((response) => {
+        this.indUser = response;
+        console.log(this.indUser);
+      });
+    }
+  }
 }

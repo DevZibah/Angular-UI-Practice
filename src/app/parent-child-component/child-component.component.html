@@ -1,12 +1,7 @@
-<section class="">
-  <div class="p-4" *ngIf="formUser">
-    <div class="">
-      <h4 class="">First Name: {{ formUser.firstName }}</h4>
-      <h4 class="">Last name: {{ formUser.lastName }}</h4>
-    </div>
-    <div class="">
-      <h4 class="">Body Size: {{ formUser.bodySize }}</h4>
-      <h4 class="">Description: {{ formUser.description }}</h4>
-    </div>
+<section>
+  <div *ngIf="indUser">
+    <p>First Name: {{ indUser.firstName }}</p>
+    <p>Last name: {{ indUser.lastName }}</p>
+    <p>Phone Number: {{ indUser.phoneNumber }}</p>
   </div>
 </section>

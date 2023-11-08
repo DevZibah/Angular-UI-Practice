@@ -23,4 +23,7 @@ export class service {
       .get<UserDetails[]>(this.baseUrl)
       .pipe(tap((response) => console.log(JSON.stringify(response))));
   }
+  getDataById(id: number): Observable<UserDetails> {
+    return this.http.get<any>(`${this.baseUrl}/${id}`);
+  }
 }

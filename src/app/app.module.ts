@@ -15,6 +15,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BuyerContactingSellerComponent } from './buyer-Contacting-Seller/buyer-contacting-seller.component';
 import { ChatAppComponent } from './chatApp/chat-app.component';
 import { ParentComponentComponent } from './parent-child-component/parent-component.component';
+import { ChildComponentComponent } from './parent-child-component/child-component.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ParentComponentComponent } from './parent-child-component/parent-compon
     BuyerContactingSellerComponent,
     ChatAppComponent,
     ParentComponentComponent,
+    ChildComponentComponent,
   ],
   imports: [
     BrowserModule,
