@@ -1,1 +1,12 @@
-<p>parent-component works!</p>
+<section class="p-4">
+  <p class="fs-5 fw-bold">List of Users</p>
+  <div *ngFor="let user of users">
+    <div>
+      <p class="cursor">First Name: {{ user.firstName }}</p>
+      <p>Last Name: {{ user.lastName }}</p>
+      <p>Phone Number: {{ user.phoneNumber }}</p>
+    </div>
+    <hr />
+  </div>
+  <app-child-component></app-child-component>
+</section>
