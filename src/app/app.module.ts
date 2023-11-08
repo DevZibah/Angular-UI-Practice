@@ -3,6 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  HttpClientInMemoryWebApiModule,
+  InMemoryWebApiModule,
+} from 'angular-in-memory-web-api';
+import { fakeData } from './parent-child-component/fakeData';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +30,7 @@ import { ParentComponentComponent } from './parent-child-component/parent-compon
     ReactiveFormsModule,
     HttpClientModule,
     NgbModule,
+    HttpClientInMemoryWebApiModule.forRoot(fakeData),
   ],
   providers: [],
   bootstrap: [AppComponent],
