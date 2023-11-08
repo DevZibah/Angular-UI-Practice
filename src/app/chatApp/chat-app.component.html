@@ -1,6 +1,6 @@
 <div class="container-fluid" *ngIf="showScreen">
   <div class="row">
-    <div class="col-md-4 border border-danger">
+    <div class="col-md-4">
       <div class="user-list-card">
         <!--  this block shows the current user -->
         <article class="mt-2">
@@ -35,8 +35,8 @@
       </div>
     </div>
 
-    <!-- this block shows the chat room --> 
-    
+    <!-- this block shows the chat room -->
+
     <div class="col-md-8">
       <div class="chat-container">
         <!-- if selected user exists show this block -->
@@ -71,10 +71,11 @@
                     placeholder="Type a message"
                     class="form-control"
                     [(ngModel)]="messageText"
-                    (keyup)="$event.keyCode === 13 && sendMessage()"
+                    (keydown.enter)="handleEnterKey($event)"
                   />
                 </div>
               </div>
+              <!-- (keyup)="$event.keyCode === 13 && sendMessage()" -->
 
               <div class="col-md-2 text-center align-self-center">
                 <button

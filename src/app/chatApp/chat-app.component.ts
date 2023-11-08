@@ -96,6 +96,14 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
       });
   }
 
+  // this function adds a new character to the messageText when the enter key is pressed
+  handleEnterKey(event: any): void {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      this.messageText += '\n';
+    }
+  }
+
   // This lifecycle hook is called after the view has been initialized. it opens up the modal
   ngAfterViewInit(): void {
     this.openPopup(this.popup);
@@ -138,12 +146,12 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
       (storage: { roomId: string }) => storage.roomId === this.roomId
     );
 
-    // if storeIndex(a number) is greater than -1 i.e. from 0 upwards, the var(messageArray) should contain the selectedUser's message and the currentUsers message 
+    // if storeIndex(a number) is greater than -1 i.e. from 0 upwards, the var(messageArray) should contain the selectedUser's message and the currentUsers message
     if (storeIndex > -1) {
       this.messageArray = this.storageArray[storeIndex].chats;
     }
 
-    // 
+    //
     this.join(this.currentUser.name, this.roomId);
   }
 

@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BuyerContactingSellerComponent } from './buyer-Contacting-Seller/buyer-contacting-seller.component';
 import { ChatAppComponent } from './chatApp/chat-app.component';
+import { ParentComponentComponent } from './parent-child-component/parent-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BuyerContactingSellerComponent,
     ChatAppComponent,
+    ParentComponentComponent,
   ],
   imports: [
     BrowserModule,
