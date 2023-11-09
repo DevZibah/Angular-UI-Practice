@@ -1,12 +1,8 @@
-import { catchError, tap } from 'rxjs/operators';
+import { tap } from 'rxjs/operators';
 import { UserDetails } from './interface';
-import {
-  HttpClient,
-  HttpErrorResponse,
-  HttpHeaders,
-} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class service {

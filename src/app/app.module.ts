@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {
   HttpClientInMemoryWebApiModule,
-  InMemoryWebApiModule,
 } from 'angular-in-memory-web-api';
 import { fakeData } from './parent-child-component/fakeData';
 

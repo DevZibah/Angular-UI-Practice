@@ -6,15 +6,15 @@ export class fakeData implements InMemoryDbService {
     let data: UserDetails[] = [
       {
         id: 1,
-        firstName: 'Emma',
-        lastName: 'Lukemon',
-        phoneNumber: 10,
+        firstName: 'Ella',
+        lastName: 'Omebel',
+        phoneNumber: 10876544,
       },
       {
         id: 2,
-        firstName: 'Cyndy',
-        lastName: 'Eli',
-        phoneNumber: 14,
+        firstName: 'Chy',
+        lastName: 'Eliza',
+        phoneNumber: 14422264,
       },
     ];
 

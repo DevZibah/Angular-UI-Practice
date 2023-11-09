@@ -11,7 +11,7 @@ export class ParentComponentComponent implements OnInit {
   errorMessage = '';
   users: UserDetails[] = [];
   indUser: any;
-  // indUser: UserDetails | undefined;
+
   constructor(private service: service) {}
 
   ngOnInit(): void {
@@ -32,8 +32,6 @@ export class ParentComponentComponent implements OnInit {
 
   viewDataById(userId: number) {
     if (userId) {
-      this.indUser = this.users.find((x) => x.id === userId);
-
       this.service.getDataById(userId).subscribe((response) => {
         this.indUser = response;
         console.log(this.indUser);
