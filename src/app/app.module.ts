@@ -16,6 +16,8 @@ import { ChatAppComponent } from './chatApp/chat-app.component';
 import { ParentComponentComponent } from './parent-child-component/parent-component.component';
 import { ChildComponentComponent } from './parent-child-component/child-component.component';
 
+import { LayoutModule } from './layout-template/layout.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,7 @@ import { ChildComponentComponent } from './parent-child-component/child-componen
     ChatAppComponent,
     ParentComponentComponent,
     ChildComponentComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import { ChildComponentComponent } from './parent-child-component/child-componen
     HttpClientModule,
     NgbModule,
     HttpClientInMemoryWebApiModule.forRoot(fakeData),
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
