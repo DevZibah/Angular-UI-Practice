@@ -6,11 +6,12 @@ import { ContactComponent } from './contact.component';
 import { LayoutComponent } from './layout.component';
 import { RouterModule } from '@angular/router';
 import { LayoutRoutingModule } from './layout-routing.module';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [LayoutComponent, HomeComponent, ContactComponent],
+  declarations: [LayoutComponent, HomeComponent, ContactComponent, NavbarComponent, SidebarComponent],
   imports: [CommonModule, RouterModule, LayoutRoutingModule],
-  exports: [LayoutComponent], //this removes the error that AppComponent cannot recognize LayoutComponent since it was not declared in app.module.ts file
 })
 export class LayoutModule {}
