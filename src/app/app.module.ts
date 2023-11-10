@@ -15,6 +15,7 @@ import { ParentComponentComponent } from './parent-child-component/parent-compon
 import { ChildComponentComponent } from './parent-child-component/child-component.component';
 
 import { LayoutModule } from './layout-template/layout.module';
+import { SharedModule } from './layout-template/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { LayoutModule } from './layout-template/layout.module';
     NgbModule,
     HttpClientInMemoryWebApiModule.forRoot(fakeData),
     LayoutModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
