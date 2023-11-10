@@ -1,18 +1,11 @@
-<section class="border border-danger">
-  <nav>
-    <div>
-      <p class="text-uppercase">Logo</p>
-    </div>
-    <div class="d-flex">
-      <p routerLink="/">Home</p>
-      <p routerLink="/contact">Contact</p>
-    </div>
-  </nav>
+<section class="">
+  <app-navbar></app-navbar>
+  <main class="d-flex">
+    <article>
+      <app-sidebar></app-sidebar>
+    </article>
+    <article class="p-4">
+      <router-outlet></router-outlet>
+    </article>
+  </main>
 </section>
-<aside>
-  <p>Jobs</p>
-  <p>Status</p>
-</aside>
-<div>
-  <router-outlet></router-outlet>
-</div>

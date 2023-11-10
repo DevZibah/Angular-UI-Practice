@@ -6,12 +6,12 @@ import { ContactComponent } from './contact.component';
 import { LayoutComponent } from './layout.component';
 import { RouterModule } from '@angular/router';
 import { LayoutRoutingModule } from './layout-routing.module';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { SharedModule } from './shared/shared.module';
+
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [LayoutComponent, HomeComponent, ContactComponent, NavbarComponent, SidebarComponent],
-  imports: [CommonModule, RouterModule, LayoutRoutingModule],
+  declarations: [LayoutComponent, HomeComponent, ContactComponent],
+  imports: [CommonModule, RouterModule, LayoutRoutingModule, SharedModule],
 })
 export class LayoutModule {}
