@@ -1,12 +1,18 @@
 <section>
-    <nav>
-        <div></div>
-        <div>
-            <p>Home</p>
-            <p>Contact</p>
-        </div>
-    </nav>
+  <nav>
     <div>
-      <router-outlet></router-outlet>
+      <p>Logo</p>
     </div>
+    <div>
+      <p routerLink="/">Home</p>
+      <p routerLink="/Contact">Contact</p>
+    </div>
+  </nav>
+  <aside>
+    <p>Jobs</p>
+    <p>Status</p>
+  </aside>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </section>

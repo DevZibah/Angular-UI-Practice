@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [HomeComponent, ContactComponent, LayoutComponent],
+  declarations: [HomeComponent, ContactComponent],
   imports: [CommonModule, RouterModule],
 })
 export class LayoutModule {}

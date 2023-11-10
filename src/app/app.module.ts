@@ -3,9 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {
-  HttpClientInMemoryWebApiModule,
-} from 'angular-in-memory-web-api';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { fakeData } from './parent-child-component/fakeData';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +15,7 @@ import { ParentComponentComponent } from './parent-child-component/parent-compon
 import { ChildComponentComponent } from './parent-child-component/child-component.component';
 
 import { LayoutModule } from './layout-template/layout.module';
+import { LayoutComponent } from './layout-template/layout.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,7 @@ import { LayoutModule } from './layout-template/layout.module';
     ChatAppComponent,
     ParentComponentComponent,
     ChildComponentComponent,
-    
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
