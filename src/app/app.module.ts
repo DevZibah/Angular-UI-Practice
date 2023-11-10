@@ -15,7 +15,6 @@ import { ParentComponentComponent } from './parent-child-component/parent-compon
 import { ChildComponentComponent } from './parent-child-component/child-component.component';
 
 import { LayoutModule } from './layout-template/layout.module';
-import { LayoutComponent } from './layout-template/layout.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { LayoutComponent } from './layout-template/layout.component';
     ChatAppComponent,
     ParentComponentComponent,
     ChildComponentComponent,
-    LayoutComponent,
   ],
   imports: [
     BrowserModule,

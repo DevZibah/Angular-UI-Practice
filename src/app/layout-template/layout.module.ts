@@ -9,7 +9,8 @@ import { LayoutRoutingModule } from './layout-routing.module';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [HomeComponent, ContactComponent],
+  declarations: [LayoutComponent, HomeComponent, ContactComponent],
   imports: [CommonModule, RouterModule, LayoutRoutingModule],
+  exports: [LayoutComponent], //this removes the error that AppComponent cannot recognize LayoutComponent since it was not declared in app.module.ts file
 })
 export class LayoutModule {}

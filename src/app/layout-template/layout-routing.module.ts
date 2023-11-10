@@ -7,7 +7,7 @@ import { ContactComponent } from './contact.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent,
+    // component: LayoutComponent,
     children:[
       {
         path:'',
