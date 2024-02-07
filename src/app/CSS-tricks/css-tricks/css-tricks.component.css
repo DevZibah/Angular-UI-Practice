@@ -1,0 +1,185 @@
+/* .colorMix {
+  border: 3px solid color-mix(in hwb, red 30%, yellow);
+  background-color: color-mix(in hwb, yellow 80%, blue 20%);
+  color: color-mix(in hsl, white 20%, blue);
+} */
+
+/* 10% of the viewport width i.e if the width is 1000px, h1 will have 100px. 16 is the base size for 1rem*/
+/* at 1000px view port width, since 100px is more than 98px, the size of our text will stay at 98px, which means it won't exceed 98px but if the view port width is 900px, it means the pref-val will be 90px which is less than  98px, which means 90px will be used instead. if the view port size is 400px, it means the pref-value will be 40px and since 40px is less than 48px, 48px will be used instead meanng it won't go less than 48px. */
+/* h3 {
+  font-size: clamp(3rem, 10vw, 4rem);
+  font-size: clamp(48px, 10vw, 98px);
+}
+p {
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(16px, 5vw, 32px);
+} */
+
+/* .modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color-mix(in hsl, white 20%, blue);
+} */
+/* ::backdrop {
+  --backdrop: color-mix(in hsl, white 20%, blue);
+}
+dialog::backdrop {
+  background: var(--backdrop);
+} */
+/* .modalContent {
+  width: 518px;
+  height: 220px;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #ffffff;
+} */
+
+/* .maskImg {
+  --webkit-mask-image: url(../../../assets/johnEmma.png);
+  mask-image: url(../../../assets/johnEmma.png);
+
+  --webkit-mask-position: top center;
+  mask-position: top center;
+
+  --webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+
+  --webkit-mask-size: 500px;
+  mask-size: 500px;
+
+  object-fit: cover;
+  width: 100%;
+}
+h1 {
+  font-size: 4rem;
+} */
+
+/* .textWrap {
+  max-width: 400px;
+  text-align: center;
+  text-wrap: balance;
+  margin: 0 auto;
+  transform: translateY(50%);
+} */
+
+/* ol {
+  counter-reset: foodType 10;
+  list-style-type: none;
+}
+li {
+  counter-increment: foodType;
+}
+li::before {
+  content: "Food-Type " counter(foodType) ": ";
+} */
+
+/* .items-container {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.items-container div {
+  width: 170px;
+  height: 70px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: salmon;
+} */
+
+/* .drop-shadow-container {
+  border: 1px solid red;
+  background-color: salmon;
+  text-align: center;
+}
+.drop-shadow-container img {
+  padding: 20px;
+  width: 20%;
+}
+.drop-shadow-container img:last-child {
+  filter: drop-shadow(5px 8px 12px red);
+} */
+
+/* .shape-outside-container {
+  border: 1px solid red;
+  padding: 2rem;
+  background-color: salmon;
+  color: white;
+  font-size: 25px;
+}
+.shape-outside-container img {
+  width: 20%;
+}
+.shape-outside-img {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 53px 0 0 4px;
+  shape-outside: content-box circle(115px at 150px 150px);
+} */
+/* .section {
+  border: 1px solid red;
+  background-color: whitesmoke;
+  width: 500px;
+  margin: 0 auto;
+}
+.repeating-linear-gradient {
+  border: 1px solid whitesmoke;
+  margin: 0 auto;
+  padding: 3rem;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(119, 9, 85, 0.5) 35%,
+    rgb(11, 11, 88) 50%
+  );
+}
+h3 {
+  margin-top: 40%;
+} */
+
+.btn-container {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 400px;
+  height: 160px;
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+.btn,
+.btn1 {
+  border-radius: 10px;
+  width: 200px;
+  height: 70px;
+  color: white;
+  background-size: 200%;
+  font-weight: 500;
+  transition: 0.6s;
+}
+.btn {
+  border: 1px solid white;
+  background-image: linear-gradient(to left, #c0392b, #e74c3c, #3498db);
+}
+.btn:hover,
+.btn1:hover {
+  background-position: right;
+}
+.btn1 {
+  border: 1px solid white;
+  background-image: linear-gradient(to left, #34495e, #2c3e50, #27ae60);
+}

@@ -16,6 +16,7 @@ import { ChildComponentComponent } from './parent-child-component/child-componen
 
 import { LayoutModule } from './layout-template/layout.module';
 import { SharedModule } from './layout-template/shared/shared.module';
+import { CssTricksComponent } from './CSS-tricks/css-tricks/css-tricks.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SharedModule } from './layout-template/shared/shared.module';
     ChatAppComponent,
     ParentComponentComponent,
     ChildComponentComponent,
+    CssTricksComponent,
   ],
   imports: [
     BrowserModule,

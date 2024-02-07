@@ -8,8 +8,6 @@ import { RouterModule } from '@angular/router';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { SharedModule } from './shared/shared.module';
 
-// import { FlexLayoutModule } from '@angular/flex-layout';
-
 @NgModule({
   declarations: [LayoutComponent, HomeComponent, ContactComponent],
   imports: [CommonModule, RouterModule, LayoutRoutingModule, SharedModule],

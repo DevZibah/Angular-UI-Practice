@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 import { io, Socket } from 'socket.io-client';
 
 @Injectable({
@@ -12,7 +13,7 @@ export class ChatService {
   private url = 'http://localhost:3000';
 
   // The constructor initializes the service. It creates an instance of the Socket.IO client and connects it to the specified server URL. It also specifies which transports can be used
-  constructor() {
+  constructor(private http: HttpClient) {
     this.socket = io(this.url, {
       transports: ['websocket', 'polling', 'flashsocket'],
     });
@@ -26,6 +27,19 @@ export class ChatService {
   // This method takes a data parameter and emits a 'message' event to the server using the Socket.IO client. This is used to send a message to the chat room.
   sendMessage(data: any): void {
     this.socket.emit('message', data);
+  }
+
+  sendFile(file: File, room: string, user: string): void {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    this.http
+      .post('http://localhost:3000/uploads/', formData)
+      .subscribe((response) => {
+        console.log(response);
+      });
+
+    this.socket.emit('fileUploaded', { file, room, user });
   }
 
   // This method returns an observable that can be subscribed to in order to receive messages from the server

@@ -16,6 +16,7 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
   messageText!: string;
   messageArray: { user: string; message: string }[] = [];
   storageArray: any;
+  selectedFile: File | null = null;
 
   showScreen = false;
   phone!: string;
@@ -96,11 +97,20 @@ export class ChatAppComponent implements OnInit, AfterViewInit {
       });
   }
 
-  // this function adds a new character to the messageText when the enter key is pressed
-  handleEnterKey(event: any): void {
-    if (event.keyCode === 13) {
-      event.preventDefault();
-      this.messageText += '\n';
+  // Add this method to your component
+  onFileChanged(event: any): void {
+    const files: FileList = event.target.files;
+    if (files && files.length > 0) {
+      this.selectedFile = files[0];
+    }
+  }
+  handleFileUpload(): void {
+    if (this.selectedFile) {
+      this.chatService.sendFile(
+        this.selectedFile,
+        this.roomId,
+        this.currentUser?.name
+      );
     }
   }
 

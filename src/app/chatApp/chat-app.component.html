@@ -71,11 +71,9 @@
                     placeholder="Type a message"
                     class="form-control"
                     [(ngModel)]="messageText"
-                    (keydown.enter)="handleEnterKey($event)"
                   />
                 </div>
               </div>
-              <!-- (keyup)="$event.keyCode === 13 && sendMessage()" -->
 
               <div class="col-md-2 text-center align-self-center">
                 <button
@@ -83,6 +81,17 @@
                   (click)="sendMessage()"
                 >
                   Send
+                </button>
+              </div>
+
+              <div class="col-md-2 text-center align-self-center">
+                <!-- File Upload Button -->
+                <input type="file" (change)="onFileChanged($event)" />
+                <button
+                  class="btn btn-secondary btn-sm px-3"
+                  (click)="handleFileUpload()"
+                >
+                  Upload File
                 </button>
               </div>
             </div>
