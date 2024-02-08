@@ -234,7 +234,7 @@ h3 {
   color: white;
 } */
 
-.scroll-container {
+/* .scroll-container {
   border: 1px solid red;
   background-color: #d35400;
   margin: 0 auto;
@@ -242,6 +242,7 @@ h3 {
   height: 300px;
   overflow-y: auto;
   color: white;
+  scroll-padding-top: 50px;
 }
 .navLinks {
   border: 1px solid whitesmoke;
@@ -256,4 +257,4 @@ h3 {
 }
 .navLinks p{
   cursor: pointer;
-}
+} */
